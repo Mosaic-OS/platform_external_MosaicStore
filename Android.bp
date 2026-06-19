@@ -1,0 +1,23 @@
+android_app_import {
+    name: "MosaicStore",
+    product_specific: true,
+    privileged: true,
+
+    apk: "prebuilt/MosaicStore.apk",
+    preprocessed: true,
+
+    optional_uses_libs: ["androidx.window.extensions", "androidx.window.sidecar"],
+
+    required: [
+        "privapp-permissions_apps.mosaicos.io.xml",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions_apps.mosaicos.io.xml",
+    product_specific: true,
+
+    src:  "permissions/apps.mosaicos.io.xml",
+    sub_dir: "permissions",
+    filename_from_src: true,
+}
