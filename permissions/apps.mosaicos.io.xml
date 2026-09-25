@@ -2,5 +2,6 @@
 <permissions>
     <privapp-permissions package="apps.mosaicos.io">
         <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.SETUP_FSVERITY"/>
     </privapp-permissions>
 </permissions>
